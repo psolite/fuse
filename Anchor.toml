@@ -5,14 +5,17 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-fuse = "AuccVXwMAEKwqoqT6qztCYxpg1W4RY3rBJdxUxLKSq7z"
+fuse = "rtacvJhGMzaCHjAgscGQgQSZBveyP7jgzRkjSztoEd6"
+
+[programs.devnet]
+fuse = "rtacvJhGMzaCHjAgscGQgQSZBveyP7jgzRkjSztoEd6"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
-wallet = "~/.config/solana/id.json"
+cluster = "devnet"
+wallet = "~/PsoZSQhHg7USeEx8qQLKNhjXARH1XBUj8iGDNp5Y22V.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
